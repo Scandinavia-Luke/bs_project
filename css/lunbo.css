@@ -1,0 +1,166 @@
+/*---------图片轮播---------*/
+
+/* 一些简单的初始化文件 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* 更改图片的大小 */
+img {
+	width: 100%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 确定盒子的大小 */
+.box {
+	position: relative;
+	width: 958px;
+	height: 284px;
+	/* 居中 */
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.imgs {
+	position: absolute;
+	width: 730px;
+	height: 284px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+/* 让图片都叠在一起 */
+.imgs li {
+	position: absolute;
+	width: 730px;
+	transition: 0.5s;
+}
+
+/* 给左右按钮设计样式，和定位 */
+.box .left {
+	position: absolute;
+	font-size: 24px;
+	color: white;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: black;
+	border-radius: 18px;
+	/* 添加半透明 */
+	opacity: .3;
+	top: 50%;
+	left: 0;
+	z-index: 999;
+}
+
+.box .right {
+	position: absolute;
+	font-size: 24px;
+	color: white;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: black;
+	border-radius: 18px;
+	/* 添加半透明 */
+	opacity: .3;
+	top: 50%;
+	right: 0;
+	z-index: 999;
+}
+
+/* 给左右按钮添加鼠标移入样式 */
+.left:hover {
+	/* 把透明度挑高一点，让按钮看起来更亮一些 */
+	opacity: .7;
+}
+
+.right:hover {
+	opacity: .7;
+}
+
+/* 把图片错开 */
+.imgs .one {
+	transform: translateX(-150px) scale(0.9);
+	z-index: 1;
+}
+
+/* 第二张图片在中间，层级最高 */
+.imgs .two {
+	z-index: 2;
+}
+
+.imgs .three {
+	transform: translateX(150px) scale(0.9);
+	z-index: 1;
+}
+
+/* 刚开始不显示的图片就放在中间图片的下面 */
+.imgs .four {
+	transform: scale(0.9);
+}
+
+.imgs .five {
+	transform: scale(0.9);
+}
+
+.imgs .six {
+	transform: scale(0.9);
+}
+
+/* 设计小圆圈 */
+/* 定位 */
+.list {
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	margin-left: -81px;
+	z-index: 777;
+}
+
+/* 设计样式 */
+.list li {
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-color: rgb(230, 230, 230);
+	border-radius: 50%;
+	margin: 0 6px;
+	cursor: pointer;
+}
+
+/* 小圆圈改变后的样式 */
+.list .change {
+	background-color: rgb(236, 65, 65);
+}
+
+/* 左右两边各一个盒子 */
+.rights {
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+	height: 255.5px;
+	width: 100px;
+}
+
+.lefts {
+	position: absolute;
+	left: 0;
+	bottom: 14px;
+	height: 255.5px;
+	width: 100px;
+}

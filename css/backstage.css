@@ -1,0 +1,333 @@
+html *,
+div {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+	/* background-color: #d1ffb4; */
+	background: url(../images/wallpaper.png);
+	background-color: rgba(255, 255, 255, 0.5);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*------后台登录-----------------------------------------------------------*/
+.login_bk {
+	background-color: #d1ffb4;
+}
+
+.login_area {
+	width: 400px;
+	height: 300px;
+	border: 1px solid #55ff7f;
+	margin: 50px auto;
+	background-color: #dedede;
+	position: relative;
+	left: 50px;
+}
+
+.login_area div {
+	left: 90px;
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+
+.login_area table {
+	width: 100%;
+	height: 70%;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 16px;
+
+}
+
+.login_area .tb_l {
+	width: 35%;
+	text-align: right;
+}
+
+.login_area .tb_r {
+	width: 75%;
+	text-align: left;
+}
+
+.login_area input[type=text],
+.login_area input[type=password] {
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.login_area input[type=submit],
+.login_area input[type=reset] {
+	width: 60px;
+	height: 25px;
+	background-color: white;
+	color: black;
+	border: 2px solid #4CAF50;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+	/* 添加动画渐变 */
+}
+
+.login_area input[type=submit]:hover,
+/* 承接动画渐变 */
+.login_area input[type=reset]:hover {
+	background-color: darkgoldenrod;
+	color: white;
+	border: 2px solid #4CAF50;
+}
+
+/*--------后台管理---------------------------------------------------------------------*/
+.container_bk {
+	width: 1060px;
+	height: 100%;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.container_bk .top_navigation {
+	width: 100%;
+	height: 30px;
+	float: left;
+	text-align: right;
+}
+
+.container_bk .top_banner {
+	width: 100%;
+	float: left;
+	height: 100px;
+	margin-bottom: 15px;
+	/* background-color: #e6a721; */
+	background: url(../images/backimage.jpg);
+}
+
+.container_bk .top_banner span {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 100px;
+	color: #ffffff;
+	font-style: oblique;
+	letter-spacing: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+.container_bk .content_bk {
+	width: 100%;
+	height: 460px;
+	float: left;
+
+}
+
+.container_bk .content_left {
+	width: 260px;
+	height: auto;
+	float: left;
+}
+
+.container_bk .content_left .news_type {
+	width: 100%;
+	height: auto;
+	text-align: left;
+	font-size: medium;
+}
+
+.container_bk .news_type table {
+	width: 100%;
+	height: auto;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.container_bk .news_type th,
+.container_bk .news_type td {
+	height: 28px;
+	line-height: 28px;
+	text-indent: 5px;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------*/
+.container_bk .content_right {
+	width: 780px;
+	height: auto;
+	float: right;
+}
+
+.container_bk .content_right span {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.container_bk .content_right span input[type=text] {
+	width: 200px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.container_bk .content_right span input[type=submit] {
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #237a47;
+}
+
+/*------------------------------------------------------------------------------*/
+
+.container_bk .news_list1 {
+	width: 700px;
+	height: auto;
+	color: #333333;
+	margin: 10px auto;
+	border: 1px solid #2d2d2d;
+	border-collapse: collapse;
+}
+
+.container_bk .news_list1 caption {
+	padding: 8px 20px;
+	text-align: left;
+	color: #ffffff;
+	background-color: #555555;
+}
+
+.container_bk .news_list1 th,
+.news_list1 td {
+	border: 1px solid #2d2d2d;
+	height: 30px;
+
+}
+
+.container_bk .news_list1 .tb_title {
+	width: 50%;
+}
+
+.container_bk .news_list1 .tb_date {
+	width: 20%;
+}
+
+.container_bk .news_list1 .tb_detail {
+	width: 30%;
+}
+
+.container_bk .news_list1 .tb_l {
+	text-align: left;
+	text-indent: 10px;
+}
+
+.container_bk .news_list1 .tb_c {
+	text-align: center;
+}
+
+.container_bk .page_list1 {
+	width: 700px;
+	height: auto;
+	color: #2d2d2d;
+	margin: 3px auto;
+	border-bottom: 1px solid #2d2d2d;
+	padding-bottom: 5px;
+	border-collapse: collapse;
+}
+
+.container_bk .page_list1 tr {
+	height: 40px;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+.container_bk .footer {
+	width: 100%;
+	float: left;
+	height: 50px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-style: oblique;
+	line-height: 50px;
+	color: #ffffff;
+	/* background-color: #e6a721; */
+	background: url(../images/backimage.jpg);
+}
+
+/*--------添加新闻--------------------------------------------------------------------*/
+.container_bk .content_bk .newsadd_tb {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.container_bk .newsadd_tb td {
+	height: 35px;
+	line-height: 35px;
+}
+
+.container_bk .newsadd_tb input[name=news_title] {
+	width: 450px;
+	height: 28px;
+}
+
+.container_bk .newsadd_tb input[name=news_author] {
+	width: 250px;
+	height: 26px;
+}
+
+.container_bk .newsadd_tb select {
+	width: 150px;
+	height: 26px;
+}
+
+.container_bk .newsadd_tb input[type=submit],
+.container_bk .newsadd_tb input[type=reset] {
+	width: 80px;
+	height: 28px;
+	border: 1px solid green;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+.container_bk .content_bk .typeadd_tb {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.container_bk .typeadd_tb td {
+	height: 35px;
+	line-height: 35px;
+}
+
+.container_bk .typeadd_tb input[name=type_name] {
+	width: 300px;
+	height: 28px;
+}
+
+.container_bk .typeadd_tb input[type=submit],
+.container_bk .typeadd_tb input[type=reset] {
+	width: 80px;
+	height: 28px;
+	border: 1px solid green;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.container_bk .typeadd_tb .tb_l {
+	width: 15%;
+
+}
+
+/*---------------------------------------------------------------*/
+
+.container_bk .news_type a {
+	text-decoration: none;
+	color: #2d2d2d;
+}
+
+.container_bk .news_list1 a {
+	text-decoration: none;
+	color: #2d2d2d;
+}
